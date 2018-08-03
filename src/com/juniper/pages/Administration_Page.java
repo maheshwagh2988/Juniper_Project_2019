@@ -7,6 +7,7 @@ public class Administration_Page {
 	@FindBy(xpath="//*[@id='homepage-navigation']/li[5]/a")
 	public WebElement AdministrationClick;
 	
+	//Test
 	@FindBy(xpath="//a[@href='/juniper-sh-qa-c-20/Administration/Users']")
 	public WebElement UserAdministrationClick;
 	
