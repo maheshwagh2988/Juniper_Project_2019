@@ -45,7 +45,7 @@ public class TestFramWork extends ConfigBaseClass {
 	@Test
 	public void Test2() throws InterruptedException {
 		
-//			HomePage hp = PageFactory.initElements(driver, HomePage.class);
+//			HomePage hp = PageFactory.initElements(driver, HomePage.class); test
 //			driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 //			Assert.assertEquals(hp.HomePageIcon.getAttribute("src"),"http://ms-qa-c/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png","Actual img is not expected");
 //			System.out.println(hp.HomePageIcon.getAttribute("src"));
