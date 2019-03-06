@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -49,12 +50,15 @@ public class ConfigBaseClass {
 //			OR.load(fn);
 
 			// Initalize web driver and event firing
+			
 			 WebDriver dr = null;
 			if (CONFIG.getProperty("browser").equals("Firefox")) {
 				dr = new FirefoxDriver();
+				
 			} else if (CONFIG.getProperty("browser").equals("IE")) {
 				System.setProperty("webdriver.ie.driver", "D:/Automation/IEDriverServer.exe");
 				dr = new InternetExplorerDriver();
+				Reporter.log("Browser Opne");
 			}
 			else  if (CONFIG.getProperty("browser").equals("Chrome")){
 				System.setProperty("webdriver.chrome.driver","D:\\Automation\\chromedriver.exe");
@@ -64,11 +68,12 @@ public class ConfigBaseClass {
 			
 			dr.get(CONFIG.getProperty("url"));
 			
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+			dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			if (dr != null) {
 				driver = new EventFiringWebDriver(dr);
-				driver.manage().timeouts().implicitlyWait(50l, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+				
 			}
 		}
 	}
