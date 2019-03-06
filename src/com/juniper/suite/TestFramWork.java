@@ -71,7 +71,7 @@ public class TestFramWork extends ConfigBaseClass {
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		hp.Click_On_eCQM_EH_Measure_Tab.click();
 				
-		//VerifyHomePageEHTab
+		//VerifyHomePageEHTab tets
 		hp.Click_On_eCQM_EH_Measure_Tab.click();
 		String mytext=hp.Click_On_eCQM_EH_Measure_Tab.getText();
 		//System.out.println("My Expected Text is: "+mytext);
