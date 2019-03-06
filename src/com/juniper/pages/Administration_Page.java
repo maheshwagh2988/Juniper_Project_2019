@@ -1,5 +1,5 @@
 package com.juniper.pages;
-//Test GITHUB
+//Test GITHUB 
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,7 +8,7 @@ public class Administration_Page {
 	@FindBy(xpath="//*[@id='homepage-navigation']/li[5]/a")
 	public WebElement AdministrationClick;
 	
-	//Test
+	//Test Test
 	@FindBy(xpath="//a[@href='/juniper-sh-qa-c-20/Administration/Users']")
 	public WebElement UserAdministrationClick;
 	
