@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage {
 	
-	//Verify Juniper   
+	//Verify Juniper   test
 	@FindBy(xpath="//img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png']")
 	public WebElement HomePageIcon; 
 	
