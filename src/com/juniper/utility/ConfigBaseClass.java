@@ -16,7 +16,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
+//test
 public class ConfigBaseClass {
 	
 	// Initilaze the property file
