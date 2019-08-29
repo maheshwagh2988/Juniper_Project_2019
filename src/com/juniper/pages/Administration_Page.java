@@ -1,5 +1,5 @@
 package com.juniper.pages;
-//Test GITHUB 
+//Test GITHUB TEST
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
