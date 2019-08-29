@@ -1,68 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 290.511 sec <<< FAILURE! - in TestSuite
-Test2(com.juniper.suite.TestFramWork)  Time elapsed: 3.305 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to find element with xpath == //img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png'] (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Tests run: 27, Failures: 1, Errors: 0, Skipped: 26, Time elapsed: 41.515 sec <<< FAILURE! - in TestSuite
+beforeClass(com.juniper.suite.TestFramWork)  Time elapsed: 41.338 sec  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+Modal dialog present: 
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+System info: host: 'LEOMAHESH-PC', ip: '10.10.5.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:36369/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 3c415434-caac-4518-90a3-26c023137f2e
-*** Element info: {Using=xpath, value=//img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png']}
-	at com.juniper.suite.TestFramWork.Test2(TestFramWork.java:55)
-
-Test4(com.juniper.suite.TestFramWork)  Time elapsed: 5.314 sec  <<< FAILURE!
-java.lang.AssertionError: NotMatch expected [Rate Measures For Q1 2018 (EH)] but found [Rate Measures For 2019 Calendar Year (EH)]
-	at com.juniper.suite.TestFramWork.Test4(TestFramWork.java:85)
-
-Test5(com.juniper.suite.TestFramWork)  Time elapsed: 2.12 sec  <<< FAILURE!
-java.lang.AssertionError: NotMatch expected [EH Objective Measures For Period Q1 2018] but found [EH Objective Measures For Period 2019 Calendar Year]
-	at com.juniper.suite.TestFramWork.Test5(TestFramWork.java:167)
-
-Test6(com.juniper.suite.TestFramWork)  Time elapsed: 10.554 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to find element with xpath == //ul[@id='epECQMTab']/li[1]/a (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:10653/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 176d8bb9-0917-4b66-a3af-02759d9db8f9
-*** Element info: {Using=xpath, value=//ul[@id='epECQMTab']/li[1]/a}
-	at com.juniper.suite.TestFramWork.Test6(TestFramWork.java:184)
-
-Test7(com.juniper.suite.TestFramWork)  Time elapsed: 10.193 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to find element with xpath == //ul[@id='myTab']/li[5]/a (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41276/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: c3ff491a-cf87-4a42-855c-9bcdff0f0102
-*** Element info: {Using=xpath, value=//ul[@id='myTab']/li[5]/a}
-	at com.juniper.suite.TestFramWork.Test7(TestFramWork.java:210)
-
-Test8(com.juniper.suite.TestFramWork)  Time elapsed: 9.266 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to find element with xpath == //ul[@id='myTab']/li[6]/a (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.68', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
-Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:3991/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 7cfa03bf-a2b9-4562-bbd2-63f4e3914f10
-*** Element info: {Using=xpath, value=//ul[@id='myTab']/li[6]/a}
-	at com.juniper.suite.TestFramWork.Test8(TestFramWork.java:235)
-
-Test9(com.juniper.suite.TestFramWork)  Time elapsed: 0.734 sec  <<< FAILURE!
-java.lang.AssertionError: NotMatch expected [Submission Schedule] but found [PI EC]
-	at com.juniper.suite.TestFramWork.Test9(TestFramWork.java:264)
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:10441/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 782b0ef8-2f67-41e1-8828-aa3d6b8bc7e6
 

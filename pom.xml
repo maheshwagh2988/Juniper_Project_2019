@@ -56,4 +56,11 @@
     <version>4.0.1</version>
 </dependency>
   </dependencies>
+   <!-- properties if you want to ignore test cases from cmd then make it true
+   mvn package -Dmaven.test.skip=true
+   mvn package -DeskipTest this will only take build not run any test case
+                the code -->
+  <properties>
+  <maven.test.skip>false</maven.test.skip>
+  </properties>
 </project>
