@@ -1,13 +1,50 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 27, Failures: 1, Errors: 0, Skipped: 26, Time elapsed: 41.515 sec <<< FAILURE! - in TestSuite
-beforeClass(com.juniper.suite.TestFramWork)  Time elapsed: 41.338 sec  <<< FAILURE!
-org.openqa.selenium.UnhandledAlertException: 
-Modal dialog present: 
+Tests run: 9, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 114.032 sec <<< FAILURE! - in TestSuite
+Test2(com.juniper.suite.TestFramWork)  Time elapsed: 3.238 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with xpath == //img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.5.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+System info: host: 'LEOMAHESH-PC', ip: '10.10.4.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:10441/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: 782b0ef8-2f67-41e1-8828-aa3d6b8bc7e6
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:31281/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: e3c91257-fce9-4ede-a92f-bb0bec888522
+*** Element info: {Using=xpath, value=//img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png']}
+	at com.juniper.suite.TestFramWork.Test2(TestFramWork.java:55)
+
+Test4(com.juniper.suite.TestFramWork)  Time elapsed: 5.913 sec  <<< FAILURE!
+java.lang.AssertionError: NotMatch expected [Rate Measures For Q1 2018 (EH)] but found [Rate Measures For 2019 Calendar Year (EH)]
+	at com.juniper.suite.TestFramWork.Test4(TestFramWork.java:85)
+
+Test5(com.juniper.suite.TestFramWork)  Time elapsed: 1.187 sec  <<< FAILURE!
+java.lang.AssertionError: NotMatch expected [EH Objective Measures For Period Q1 2018] but found [EH PI Measures For Period 2019 Calendar Year]
+	at com.juniper.suite.TestFramWork.Test5(TestFramWork.java:167)
+
+Test6(com.juniper.suite.TestFramWork)  Time elapsed: 10.72 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with xpath == //ul[@id='epECQMTab']/li[1]/a (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'LEOMAHESH-PC', ip: '10.10.4.48', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:43692/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 52937264-7d3f-418e-b59d-31fc2959eb33
+*** Element info: {Using=xpath, value=//ul[@id='epECQMTab']/li[1]/a}
+	at com.juniper.suite.TestFramWork.Test6(TestFramWork.java:184)
+
+Test7(com.juniper.suite.TestFramWork)  Time elapsed: 3.629 sec  <<< FAILURE!
+java.lang.AssertionError: NotMatch expected [Improvement Activities Implementation for 01/01/2017 to 12/31/2017] but found []
+	at com.juniper.suite.TestFramWork.Test7(TestFramWork.java:218)
+
+Test8(com.juniper.suite.TestFramWork)  Time elapsed: 1.193 sec  <<< FAILURE!
+java.lang.AssertionError: NotMatch expected [ACI Transition Measures For Period Q1 2018] but found []
+	at com.juniper.suite.TestFramWork.Test8(TestFramWork.java:245)
+
+Test9(com.juniper.suite.TestFramWork)  Time elapsed: 0.77 sec  <<< FAILURE!
+java.lang.AssertionError: NotMatch expected [Submission Schedule] but found [PI EC]
+	at com.juniper.suite.TestFramWork.Test9(TestFramWork.java:264)
 
