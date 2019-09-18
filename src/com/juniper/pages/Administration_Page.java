@@ -1,9 +1,9 @@
 package com.juniper.pages;
-//Test update  
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+//update
 public class Administration_Page {
 	@FindBy(xpath="//*[@id='homepage-navigation']/li[5]/a")
 	public WebElement AdministrationClick;

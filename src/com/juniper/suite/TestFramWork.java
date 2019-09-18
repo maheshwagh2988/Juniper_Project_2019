@@ -1,5 +1,7 @@
 package com.juniper.suite;
 
+//Test GITHUB TEST Code
+
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -11,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 import javax.imageio.IIOException;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;

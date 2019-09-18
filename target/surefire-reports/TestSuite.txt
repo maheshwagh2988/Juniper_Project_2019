@@ -1,15 +1,27 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 9, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 99.501 sec <<< FAILURE! - in TestSuite
 Test2(com.juniper.suite.TestFramWork)  Time elapsed: 3.326 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Unable to find element with xpath == //img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png'] (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+=======
+Tests run: 27, Failures: 1, Errors: 0, Skipped: 26, Time elapsed: 41.515 sec <<< FAILURE! - in TestSuite
+beforeClass(com.juniper.suite.TestFramWork)  Time elapsed: 41.338 sec  <<< FAILURE!
+org.openqa.selenium.UnhandledAlertException: 
+Modal dialog present: 
+>>>>>>> refs/remotes/origin/master
 Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+<<<<<<< HEAD
 System info: host: 'LEOMAHESH-PC', ip: '10.10.4.59', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+=======
+System info: host: 'LEOMAHESH-PC', ip: '10.10.5.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+>>>>>>> refs/remotes/origin/master
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+<<<<<<< HEAD
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:18293/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: 17c2617a-37d5-4fdd-bdc5-152d5df0a943
 *** Element info: {Using=xpath, value=//img[@src='/juniper-sh-qa-c-20/Content/Encor-electronics-logo.png']}
@@ -47,4 +59,8 @@ java.lang.AssertionError: NotMatch expected [ACI Transition Measures For Period 
 Test9(com.juniper.suite.TestFramWork)  Time elapsed: 0.894 sec  <<< FAILURE!
 java.lang.AssertionError: NotMatch expected [Submission Schedule] but found [PI EC]
 	at com.juniper.suite.TestFramWork.Test9(TestFramWork.java:264)
+=======
+Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:10441/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
+Session ID: 782b0ef8-2f67-41e1-8828-aa3d6b8bc7e6
+>>>>>>> refs/remotes/origin/master
 
