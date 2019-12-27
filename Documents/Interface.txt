@@ -1,0 +1,5 @@
+1) In  Interface we can achive multiple Interitance 
+2) It Means A child class can Implement multiple Interfaces
+3) But in Interitance child class can Interit only one Parent Class
+4) In  Interface we don't define or not given body 
+5) In  Interface has only method defination or Prototype method or Only declaration of method no need to write body

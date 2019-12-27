@@ -1,29 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="9" failed="0" ignored="0" total="9" passed="0">
-  <reporter-output>
-    <line>
-      <![CDATA[Browser Opne]]>
-    </line>
-  </reporter-output>
-  <suite name="Suite" duration-ms="4281" started-at="2019-10-07T12:11:49Z" finished-at="2019-10-07T12:11:53Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="4281" started-at="2019-10-07T12:11:49Z" finished-at="2019-10-07T12:11:53Z">
-      <class name="com.juniper.suite.TestFramWork">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:49Z" finished-at="2019-10-07T17:41:49Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/9</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 07 17:41:49 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4281 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork<br/>
+<a href="#Output-1727361096" onClick='toggleBox("Output-1727361096", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1727361096" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1727361096">
+Browser Opne<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1727361096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1727361096'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -70,29 +151,134 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Browser Opne]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test1()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test1" duration-ms="3" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.beforeClass()'><b>beforeClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.afterClass()'><b>afterClass</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test1()'><b>Test1</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1665197552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1665197552'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -139,34 +325,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test2()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test2" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test2()'><b>Test2</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33533830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33533830'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -213,34 +398,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test3()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test3" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test3()'><b>Test3</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477533894", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477533894'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -287,34 +471,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test4()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test4" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test4()'><b>Test4</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510276116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510276116'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -361,34 +544,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test4 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test5()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test5" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test5()'><b>Test5</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace445918232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445918232'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -435,34 +617,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test5 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test6()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test6" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test6()'><b>Test6</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace121167003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace121167003'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -509,34 +690,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test6 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test7()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test7" duration-ms="4" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test7()'><b>Test7</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1095088856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1095088856'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -583,34 +763,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test7 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="Test8()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test8" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test8()'><b>Test8</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1522095831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1522095831'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -657,30 +836,33 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test8 -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="Test9()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="Test9" duration-ms="1" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+<tr>
+<td title='com.juniper.suite.TestFramWork.Test9()'><b>Test9</b><br>Test class: com.juniper.suite.TestFramWork</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
-Session ID: de94030e-fc00-42d6-a625-6fa679b4843f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
-Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
-System info: host: 'LEOMAHESH-PC', ip: '10.10.4.189', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_20'
+Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:195)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
+	at com.juniper.utility.ConfigBaseClass.initialize(ConfigBaseClass.java:71)
+	at com.juniper.utility.ConfigBaseClass.beforeClass(ConfigBaseClass.java:30)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1042786867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1042786867'><pre>org.openqa.selenium.UnhandledAlertException: Modal dialog present: 
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;LEOMAHESH-PC&apos;, ip: &apos;10.10.4.189&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_20&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {browserAttachTimeout: 0, browserName: internet explorer, cssSelectorsEnabled: true, elementScrollBehavior: 0, enableElementCacheCleanup: true, enablePersistentHover: true, handlesAlerts: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.forceCreateProcessApi: false, ie.usePerProcessProxy: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:40177/, javascriptEnabled: true, nativeEvents: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, requireWindowFocus: false, takesScreenshot: true, unexpectedAlertBehaviour: dismiss, unhandledPromptBehavior: dismiss, version: 11}
 Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
@@ -727,21 +909,9 @@ Session ID: de94030e-fc00-42d6-a625-6fa679b4843f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test9 -->
-        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.juniper.suite.TestFramWork@26653222]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-10-07T17:41:53Z" finished-at="2019-10-07T17:41:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.juniper.suite.TestFramWork -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>0</td>
+<td>com.juniper.suite.TestFramWork@26653222</td></tr>
+</table><p>
+</body>
+</html>
